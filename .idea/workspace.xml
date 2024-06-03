@@ -4,11 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46ed37ae-8e4c-4f3e-bae7-8d005ad12146" name="Changes" comment="Clasa car">
-      <change beforePath="$PROJECT_DIR$/src/DownUpCasting/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DownUpCasting/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DownUpCasting/DownUpCasting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DownUpCasting/DownUpCasting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DownUpCasting/Vechicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DownUpCasting/Vechicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TypeCasting/TypeCasting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TypeCasting/TypeCasting.java" afterDir="false" />
+    <list default="true" id="46ed37ae-8e4c-4f3e-bae7-8d005ad12146" name="Changes" comment="TotalThemes">
+      <change afterPath="$PROJECT_DIR$/src/Throws/BlockingQueue1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/CallableAndFutures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/Conditions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/CountDownLatch1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/CreareaFirilorADouaMetoda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/CreareaFirilorCandSeSchimbaOrdineaObservari.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/CreareaFirilorPrimaMetoda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/CyclicBarier1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/DeadLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/Exchenger1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/Executors1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/ForkJoinFramework1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/Join.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/MetodaYield.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/Phaser1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/Reentrantlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/ScheduledExcecuterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/Semofors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/SinhronizareaColectiilor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/SinhronizareaStatica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/Synchrone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/ThreadFactory1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/ThreadLocalRandomAndTimeUnit1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/TryLook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/VariabileAtomice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/Volatile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/WaitAndNotify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/WaitAndNotifyExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Throws/WaitingBlockingSleeping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +85,37 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BlockingQueue1.executor": "Run",
+    "Application.CallableAndFutures.executor": "Run",
+    "Application.Conditions.executor": "Run",
+    "Application.CountDownLatch1.executor": "Run",
+    "Application.CreareaFirilor.executor": "Run",
+    "Application.CreareaFirilorADouaMetoda.executor": "Run",
+    "Application.CreareaFirilorCandSeSchimbaOrdineaObservari.executor": "Run",
+    "Application.CyclicBarier1.executor": "Run",
+    "Application.DeadLock.executor": "Run",
     "Application.DownUpCasting.executor": "Run",
+    "Application.Exchenger1.executor": "Run",
+    "Application.Executors1.executor": "Run",
+    "Application.ForkJoinFramework1.executor": "Run",
+    "Application.MetodaYield.executor": "Run",
+    "Application.Phaser.executor": "Run",
+    "Application.Phaser1.executor": "Run",
+    "Application.ReentrantLock.executor": "Run",
+    "Application.Reentrantlock.executor": "Run",
+    "Application.ScheduledExcecuterService.executor": "Run",
+    "Application.Semofors.executor": "Run",
+    "Application.SinhronizareaColectiilor.executor": "Run",
+    "Application.SinhronizareaStatica.executor": "Run",
+    "Application.Synchrone.executor": "Run",
+    "Application.ThreadFactory1.executor": "Run",
+    "Application.ThreadLocalRandomAndTimeUnit1.executor": "Run",
+    "Application.TryLook.executor": "Run",
+    "Application.VariabileAtomice.executor": "Run",
+    "Application.Volatile.executor": "Run",
+    "Application.WaitAndNotify.executor": "Run",
+    "Application.WaitAndNotifyExample.executor": "Run",
+    "Application.WaitingBlockingSleeping.executor": "Run",
     "Application.Working_with_Data_Types.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "TotalThemes",
@@ -74,13 +130,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.DownUpCasting">
-    <configuration name="DownUpCasting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DownUpCasting.DownUpCasting" />
+  <component name="RunManager" selected="Application.ThreadLocalRandomAndTimeUnit1">
+    <configuration name="BlockingQueue1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Throws.BlockingQueue1" />
       <module name="Course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DownUpCasting.*" />
+          <option name="PATTERN" value="Throws.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +144,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Working_with_Data_Types" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="VariablesAndDataTypes.Working_with_Data_Types" />
+    <configuration name="ForkJoinFramework1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Throws.ForkJoinFramework1" />
       <module name="Course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DownUpCasting.*" />
+          <option name="PATTERN" value="Throws.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Phaser1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Throws.Phaser1" />
+      <module name="Course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Throws.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadFactory1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Throws.ThreadFactory1" />
+      <module name="Course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Throws.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadLocalRandomAndTimeUnit1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Throws.ThreadLocalRandomAndTimeUnit1" />
+      <module name="Course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Throws.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,10 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DownUpCasting" />
-        <item itemvalue="Application.Working_with_Data_Types" />
-        <item itemvalue="Application.Working_with_Data_Types" />
-        <item itemvalue="Application.Working_with_Data_Types" />
+        <item itemvalue="Application.ThreadLocalRandomAndTimeUnit1" />
+        <item itemvalue="Application.ForkJoinFramework1" />
+        <item itemvalue="Application.ThreadFactory1" />
+        <item itemvalue="Application.BlockingQueue1" />
+        <item itemvalue="Application.Phaser1" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +225,11 @@
       <workItem from="1715700556153" duration="219000" />
       <workItem from="1715700783799" duration="3939000" />
       <workItem from="1715932613212" duration="1719000" />
-      <workItem from="1716878105386" duration="1236000" />
+      <workItem from="1716878105386" duration="2238000" />
+      <workItem from="1716972700187" duration="1456000" />
+      <workItem from="1717324392857" duration="11669000" />
+      <workItem from="1717346203443" duration="7953000" />
+      <workItem from="1717404978028" duration="12282000" />
     </task>
     <task id="LOCAL-00001" summary="Primul exercitiu">
       <option name="closed" value="true" />
@@ -195,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716878664979</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="TotalThemes">
+      <option name="closed" value="true" />
+      <created>1716879447206</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716879447206</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +320,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="branch1" />
+                        <option value="TotalThemes" />
                       </list>
                     </value>
                   </entry>
@@ -230,7 +338,8 @@
     <MESSAGE value="Down and Up casting" />
     <MESSAGE value="Down and Up casting explicatie" />
     <MESSAGE value="Clasa car" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clasa car" />
+    <MESSAGE value="TotalThemes" />
+    <option name="LAST_COMMIT_MESSAGE" value="TotalThemes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

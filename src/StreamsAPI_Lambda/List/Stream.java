@@ -12,7 +12,7 @@ public class Stream {
         list.add("D");
 
        list.stream().forEach(
-               (temp) -> System.out.println(temp));
+               (listWithElements) -> System.out.println(listWithElements));
         }
     }
 

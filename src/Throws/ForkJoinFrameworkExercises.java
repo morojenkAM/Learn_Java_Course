@@ -5,16 +5,17 @@ import java.util.concurrent.RecursiveTask;
 
 public class ForkJoinFrameworkExercises {
 
-    static long numOfOperations = 10_000_000_000L;
+    static long numOfOperations = 100L;
     static int numOfThread = Runtime.getRuntime().availableProcessors();
 
     public static void main(String[] args) {
         System.out.println(numOfThread);
-        ForkJoinPool forkJoinPool = new ForkJoinPool();
-        System.out.println(forkJoinPool.invoke(new MyFork(0, numOfOperations)));
-        ForkJoinPool forkJoinPool2 = new ForkJoinPool(numOfThread);
-        System.out.println(forkJoinPool2);
-
+        try (ForkJoinPool forkJoinPool = new ForkJoinPool()) {
+            System.out.println(forkJoinPool.invoke(new MyFork(0, numOfOperations)));
+        }
+        try (ForkJoinPool forkJoinPool2 = new ForkJoinPool(numOfThread)) {
+            System.out.println(forkJoinPool2.invoke(new MyFork(0, numOfOperations))); // you were not calling the forkJoinPool2
+        }
     }
 
     static class MyFork extends RecursiveTask<Double> {
@@ -30,7 +31,7 @@ public class ForkJoinFrameworkExercises {
             if ((to - from) <= numOfOperations / numOfThread) {
                 double sum = 0;
                 for (long i = from; i < to; i++) {
-                    sum += 1.0 / i; // am corectat aici
+                    sum += i;//1.0 / i; // am corectat aici
                 }
                 return sum;
             } else {
@@ -39,7 +40,7 @@ public class ForkJoinFrameworkExercises {
                 firstHalf.fork();
 
                 MyFork secondHalf = new MyFork(middle + 1, to);
-                Double secondValue = secondHalf.compute(); // am corectat aici
+                Double secondValue = secondHalf.compute(); // am corectat aici - you don't need these comments
                 return firstHalf.join() + secondValue;
             }
         }

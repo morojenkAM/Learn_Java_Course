@@ -1,14 +1,14 @@
-package StreamsAPI_Lambda.Students;
+package streamsapi.lambda.Students;
 
-public class Students {
+public class Student {
         private String firstName;
         private String lastName;
-        private int age ;
+        private int age;
         private String gender;
-        private String departamentName ;
+        private String departamentName;
         private int averageGrade;
 
-    public Students(String firstName, String lastName, int age, String gender, String departamentName, int averageGrade) {
+    public Student(String firstName, String lastName, int age, String gender, String departamentName, int averageGrade) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -17,7 +17,7 @@ public class Students {
         this.averageGrade = averageGrade;
     }
 
-    public Students() {
+    public Student() {
 
     }
 

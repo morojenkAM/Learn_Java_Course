@@ -1,4 +1,4 @@
-package StreamsAPI_Lambda;
+package streamsapi.lambda;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package StreamsAPI_Lambda.List;
+package streamsapi.lambda.list;
 
 import java.util.*;
 public class Iterator2 {

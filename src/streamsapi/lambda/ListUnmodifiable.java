@@ -1,12 +1,12 @@
-package StreamsAPI_Lambda;
-import java.util.Set;
-import java.util.HashSet;
+package streamsapi.lambda;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Collections;
 
-public class SetUnmodifiable {
+public class ListUnmodifiable {
     public static void main(String[] args) {
-
-        Set<String> fruits = new HashSet<>();
+//List of Integer
+        List<String> fruits = new ArrayList<>();
 
         fruits.add("Banana");
         fruits.add("Apple");
@@ -19,11 +19,12 @@ public class SetUnmodifiable {
         fruits.stream().forEach(System.out::println);
 
         //add element
-        fruits.add("Banana1");
+        fruits.add("Cherry");
         fruits.add("Tomato");
 
         fruits.remove("Tomato");
 
+        fruits.set(1, "Kiwi");
         System.out.println("\n After Performing Some Operations");
 
         fruits.stream().forEach(System.out::println);
@@ -34,16 +35,16 @@ public class SetUnmodifiable {
         // Using unmodifiableList() method.
 
         try {
-            fruits = Collections.unmodifiableSet(fruits);
+            fruits = Collections.unmodifiableList(fruits);
 
             //This line will generate an Exception
-            fruits.remove("Banana");
+            fruits.remove("Apple");
         }catch (UnsupportedOperationException e) {
             System.out.println("Exception is " + e.getMessage());
         }
         finally {
-            System.out.print(fruits );
-
+            System.out.print(fruits.size() + " elements in fruits list");
+            System.out.println("\n Now list is only Read-Only");
         }
 
-    }}
+}}

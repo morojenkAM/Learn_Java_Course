@@ -1,8 +1,8 @@
-package StreamsAPI_Lambda.Map;
+package streamsapi.lambda.map;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Iterator;
+
 
 public class ForEach {
     public static void main(String[] args) {

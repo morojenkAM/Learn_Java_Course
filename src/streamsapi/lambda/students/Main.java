@@ -1,6 +1,7 @@
 package streamsapi.lambda.students;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.*;
 
@@ -46,18 +47,13 @@ public class Main {
         maxAgeOptional.ifPresent(maxAge -> System.out.println("Max age: " + maxAge));
 
         //departaments names
-        // Gruparea studenților după numele departamentului și afișarea acestora
-        Map<String, Set<Student>> studentsByDepartment = students.stream()
-                .collect(groupingBy(
-                        Student::getDepartamentName,
-                        toSet()
-                ));
+        List<String> departmentNames = students.stream()
+                .map(Student::getDepartamentName)
+                .distinct().toList();
 
-        System.out.println("\n Students grouped by department:");
-        studentsByDepartment.forEach((departmentName, studentSet) -> {
-            System.out.println(departmentName + ":");
-            studentSet.forEach(System.out::println);
-        });
+        System.out.println("\n Group  by department names:");
+        departmentNames.forEach(System.out::println);
+
 
         // count of students in each department
         Map<String, Long> studentsByDepertament   = students.stream()
@@ -69,7 +65,6 @@ public class Main {
         studentsByDepertament.forEach((departament,count) -> System.out.println(departament + " : " +count));
 
         //Find the list of students whose age is less than 30
-
         List <Student> studentsUnder30 = students.stream()
                 .filter(student -> student.getAge() < 30)
                 .collect(toList());
@@ -79,7 +74,7 @@ public class Main {
 
             //Find the list of students whose rank is between 50 and 100
             List <Student> RankBetween50and100 = students.stream()
-                    .filter(students3 -> students3.getAverageGrade() >=50 && students3.getAverageGrade() <=100)
+                    .filter(student -> student.getAverageGrade() >=50 && student.getAverageGrade() <=100)
                     .collect(toList());
             System.out.println("\n The list of students whose rank is between 50 and 100");
             for (Student l : RankBetween50and100) {
@@ -97,24 +92,25 @@ public class Main {
 
 
                 //Find the department which is having the maximum number of students
-
                 Map<String, Long> maxStudents   = students.stream()
                         .collect(groupingBy(
-                                Student::getDepartamentName,//grupam dupa departament
+                                Student::getDepartamentName,
                                 counting()
-                        ));//numara studentii
+                        ));
 
-                String departamentWithMaxStudents = maxStudents.entrySet().stream()
-                        .max(Map.Entry.comparingByValue()) // Găsește intrarea cu valoarea maximă (numărul maxim de studenți)
-                        .map(Map.Entry::getKey) // Extrage cheia (numele departamentului) din intrarea găsită
-                        .orElse("N/A"); // Dacă nu există nicio intrare, returnează "N/A" ca valoare implicită
-                System.out.println("\n Department which is having the maximum number of students is " + departamentWithMaxStudents);
+
+                //Finding the department name with the most students.
+                String departmentWithMaxStudents = maxStudents.entrySet().stream()
+                        .max(Map.Entry.comparingByValue())
+                        .get()
+                        .getKey();
+                System.out.println("\n Department which is having the maximum number of students is " + departmentWithMaxStudents);
 
                 //Find the average rank in all departments
                 Map<String, Double> averageRank   = students.stream()
                         .collect(groupingBy(
-                                Student::getDepartamentName,//grupam dupa departaemnt
-                                averagingInt(Student::getAverageGrade))); //calculam nota;
+                                Student::getDepartamentName,
+                                averagingInt(Student::getAverageGrade)));
                 System.out.println("\n The average rank in all departments ");
                 averageRank.forEach((departament1,averageRank1) -> System.out.println(departament1 + " : " + averageRank1));
 
@@ -122,8 +118,8 @@ public class Main {
                 //Find the highest rank in each department
                 Map<String, Optional<Student>> averageRankMax   = students.stream()
                         .collect(groupingBy(
-                                Student::getDepartamentName,//grupam dupa departaemnt
-                                maxBy(Comparator.comparingInt(Student::getAverageGrade))));//calculam nota
+                                Student::getDepartamentName,
+                                maxBy(Comparator.comparingInt(Student::getAverageGrade))));
 
                 System.out.println("\n The average rank in all departments ");
                 averageRankMax.forEach((departament1,averageRankMax1) -> System.out.println(departament1 + " : " + averageRankMax1));

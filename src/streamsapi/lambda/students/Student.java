@@ -1,4 +1,4 @@
-package streamsapi.lambda.Students;
+package streamsapi.lambda.students;
 
 public class Student {
         private String firstName;

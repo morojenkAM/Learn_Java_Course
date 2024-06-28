@@ -1,11 +1,10 @@
-package StreamsAPI_Lambda.ArrayList;
+package streamsapi.lambda.arraylist;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-public class Third {
+public class Stream {
     public static void main(String[] args) {
         //Stream FlatMap()
         List<String> list = new ArrayList<>();
@@ -20,7 +19,7 @@ public class Third {
         list1.add("G");
         list1.add("H");
 
-        List<String> finalJoin = Stream.of(list,list1)
+        List<String> finalJoin = java.util.stream.Stream.of(list,list1)
                 .flatMap(x -> x.stream())//este deosebit de util atunci când fiecare element al fluxului original poate fi transformat în mai multe elemente ale fluxului rezultat
                 .collect(Collectors.toList());//de a colecta si finaliza datele dintr-un flux intr-o colectie List standard
         System.out.println(finalJoin);

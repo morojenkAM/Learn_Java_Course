@@ -1,9 +1,9 @@
-package StreamsAPI_Lambda.ArrayList;
+package streamsapi.lambda.arraylist;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FirstMethod {
+public class AddAll {
     //adAll
     public static void main(String[] args) {
        List<String> list1 = new ArrayList<>();

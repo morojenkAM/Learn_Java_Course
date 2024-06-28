@@ -1,9 +1,9 @@
-package StreamsAPI_Lambda.ArrayList;
+package streamsapi.lambda.arraylist;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Fourth {
+public class Iterator {
     public static void main(String[] args) {
 
         List<String> list1 = new ArrayList<>();
@@ -18,8 +18,10 @@ public class Fourth {
 
 
         List<String> concatenatedList = new ArrayList<>(list1);
-        concatenatedList.addAll(list2);
-
+        java.util.Iterator<String> iterator = list2.iterator();
+while (iterator.hasNext()) {
+    concatenatedList.add(iterator.next());
+}
 
         System.out.println("Concatenated List: " + concatenatedList);
     }

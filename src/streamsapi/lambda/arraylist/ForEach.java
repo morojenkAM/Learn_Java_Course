@@ -1,9 +1,9 @@
-package StreamsAPI_Lambda.ArrayList;
+package streamsapi.lambda.arraylist;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class SecondMethod {
+public class ForEach {
     public static void main(String[] args) {
 
         List<String> list = new ArrayList<>();
@@ -19,9 +19,11 @@ public class SecondMethod {
         list1.add("H");
         list1.add("I");
 
-        List<String> list2 = new ArrayList<>(list1);
-        list2.removeAll(list);
-        list.addAll(list2);
-        System.out.println(list);
+
+        List<String> joinendlist2 = new ArrayList<>(list);
+       for (String item : list1) {
+           joinendlist2.add(item);
+           System.out.println("Using loop" + joinendlist2);
+       }
     }
 }

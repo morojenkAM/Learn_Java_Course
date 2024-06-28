@@ -1,5 +1,4 @@
-package StreamsAPI_Lambda;
-import java.util.ArrayList;
+package streamsapi.lambda;
 import java.util.Arrays;
 import java.util.List;
 
